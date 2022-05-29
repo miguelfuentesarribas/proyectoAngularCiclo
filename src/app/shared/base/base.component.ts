@@ -17,4 +17,10 @@ export class BaseComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  //recibira el servicio
+  isAutenticaded():boolean {
+    return true;
+  }
+
 }

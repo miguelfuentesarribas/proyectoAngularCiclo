@@ -36,7 +36,10 @@
 
         <span class="spacer"></span>
 
-        <button mat-button>Logout</button>
+        <app-login *ngIf="isAutenticaded()"></app-login>
+        <button mat-button *ngIf="isAutenticaded()" routerLink="/auth/singIn">Sing in</button>
+
+        <button mat-button *ngIf="!isAutenticaded()">Logout</button>
     </mat-toolbar>
     
 

@@ -1,1 +1,27 @@
-<p>login works!</p>
+<form autocomplete="off" [formGroup]="formularioLog" >
+
+    <div style="font-size: 14px" class="row" >
+
+        <!-- campo email -->
+        <mat-form-field class="md-form mt-0">
+            <mat-label>Email</mat-label>
+            <input matInput 
+                    type="text"
+                    class="form-control"
+                    formControlName="email">
+        </mat-form-field>
+
+        <!-- campo pass -->
+        <mat-form-field>
+            <mat-label>Constraseña</mat-label>
+            <input matInput 
+                    type="text"
+                    class="form-control"
+                    formControlName="password">
+        </mat-form-field>
+
+        <button class="m-3" mat-button>Login</button>
+
+    </div>
+
+</form>
