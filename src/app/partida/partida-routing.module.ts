@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BaseComponent } from '../shared/base/base.component';
-import { SinginComponent } from './singin/singin.component';
+import { CreateGameComponent } from './create-game/create-game.component';
+
 
 
 const routes: Routes = [
@@ -10,12 +11,12 @@ const routes: Routes = [
     component: BaseComponent,
     children: [
       {
-        path: 'singIn',
-        component: SinginComponent
+        path: 'createGame',
+        component: CreateGameComponent
       },
       {
         path: '**',
-        redirectTo: 'singIn'
+        redirectTo: 'crerateGame'
       }
     ]
   }
@@ -31,4 +32,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class AuthRoutingModule { }
+export class PartidaRoutingModule { }

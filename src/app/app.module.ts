@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { AuthModule } from './auth/auth.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
+import { PartidaModule } from './partida/partida.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AuthRoutingModule } from './auth/auth-routing.module';
     BrowserAnimationsModule,
     MaterialModule,
     AuthModule,
+    PartidaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -21,6 +21,7 @@ import { AuthRoutingModule } from './auth-routing.module';
   ],
   exports: [
     LoginComponent,
+    SinginComponent,
     AuthRoutingModule
   ]
 })

@@ -12,7 +12,7 @@
         
 
         <mat-nav-list>
-            <a routerLink="./agregar"
+            <a routerLink="/game/createGame"
                 mat-list-item
                 (click)="sidenav.toggle()">
                 <mat-icon mat-list-icon>add</mat-icon>
@@ -36,12 +36,12 @@
 
         <span class="spacer"></span>
 
-        <app-login *ngIf="isAutenticaded()"></app-login>
-        <button mat-button *ngIf="isAutenticaded()" routerLink="/auth/singIn">Sing in</button>
+        <app-login *ngIf="!isAutenticaded()"></app-login>
+        <button mat-button *ngIf="!isAutenticaded()" routerLink="/auth/singIn">Sing in</button>
 
-        <button mat-button *ngIf="!isAutenticaded()">Logout</button>
+        <button mat-button *ngIf="isAutenticaded()">Logout</button>
     </mat-toolbar>
-    
+      
 
     <div class="container">
         <router-outlet></router-outlet>

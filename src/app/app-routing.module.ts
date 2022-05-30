@@ -3,10 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { BaseComponent } from './shared/base/base.component';
 
 
+
 const routes: Routes = [
   {
     path: 'auth',
-    loadChildren: () => import('./auth/auth-routing.module').then(m => m.AuthModule)
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+  },
+  {
+    path: 'game',
+    loadChildren: () => import('./partida/partida.module').then(m => m.PartidaModule)
   },
   {
     path: 'home',

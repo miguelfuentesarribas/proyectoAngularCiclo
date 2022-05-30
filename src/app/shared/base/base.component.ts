@@ -20,7 +20,7 @@ export class BaseComponent implements OnInit {
 
   //recibira el servicio
   isAutenticaded():boolean {
-    return true;
+    return false;
   }
 
 }
