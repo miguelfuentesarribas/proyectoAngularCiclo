@@ -4,12 +4,14 @@ import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CreateGameComponent } from './create-game/create-game.component';
 import { PartidaRoutingModule } from './partida-routing.module';
+import { TimerComponent } from './timer/timer.component';
 
 
 
 @NgModule({
   declarations: [
-    CreateGameComponent
+    CreateGameComponent,
+    TimerComponent
   ],
   imports: [
     CommonModule,

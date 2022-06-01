@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BaseComponent } from '../shared/base/base.component';
 import { CreateGameComponent } from './create-game/create-game.component';
+import { TimerComponent } from './timer/timer.component';
 
 
 
@@ -14,6 +15,11 @@ const routes: Routes = [
         path: 'createGame',
         component: CreateGameComponent
       },
+      {
+        path: 'timer',
+        component: TimerComponent
+      },
+      
       {
         path: '**',
         redirectTo: 'crerateGame'
