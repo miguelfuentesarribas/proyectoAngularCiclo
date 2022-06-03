@@ -82,13 +82,9 @@ listaJugadores: Usuario[] = []
 
   guardarJugador(usuario: Usuario) {
     if (this.listaJugadores.includes(usuario)) {
-      this.listaJugadores.splice(this.listaJugadores.indexOf(usuario,0),1)
-       let arr = this.listaJugadores.pop()
-      console.log(arr);
-      console.log(this.listaJugadores);
-      
-      //this.listaJugadores = this.listaJugadores.filter(e => e !== usuario)
+      this.listaJugadores.splice(this.listaJugadores.indexOf(usuario,0),1);
+    } else {
+      this.listaJugadores.push(usuario);
     }
-    this.listaJugadores.push(usuario);
   }
 }

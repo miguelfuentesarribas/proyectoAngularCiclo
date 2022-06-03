@@ -5,13 +5,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CreateGameComponent } from './create-game/create-game.component';
 import { PartidaRoutingModule } from './partida-routing.module';
 import { TimerComponent } from './timer/timer.component';
+import { AccuracyComponent } from './timer/acuracyTimer.component';
+import { CountdownModule, CountdownGlobalConfig, CountdownConfig } from 'ngx-countdown';
 
 
 
 @NgModule({
   declarations: [
     CreateGameComponent,
-    TimerComponent
+    TimerComponent,
+    AccuracyComponent
   ],
   imports: [
     CommonModule,
@@ -21,6 +24,6 @@ import { TimerComponent } from './timer/timer.component';
   ],
   exports: [
     PartidaRoutingModule
-  ]
+  ],
 })
 export class PartidaModule { }
