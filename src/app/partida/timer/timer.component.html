@@ -4,11 +4,9 @@
         
        
     <div class="timer">
-        <h1> Count down timer </h1>
-        
-        <span id="minutes"> {{minutesToDday}} </span>Min
-        <span id="seconds"> {{secondsToDday}} </span>S
-        <span id="milisec"> {{dDay | date:'dd.MM.yyyy &nbsp; HH:mm:ss.SSS'}} </span>
+        <h1><span id="minutes"> {{minutesToDday}} : {{secondsToDday}} </span></h1>
+        <h1><span id="seconds"> {{secondsToDday}} S</span></h1>
+        <!-- <span id="milisec"> {{dDay | date:'dd.MM.yyyy &nbsp; HH:mm:ss.SSS'}} </span> -->
         
     </div>
 
@@ -16,3 +14,8 @@
     
 </mat-card>
 
+<div class="mt-3">
+    <mat-card>
+        <app-game></app-game>
+    </mat-card>
+</div>

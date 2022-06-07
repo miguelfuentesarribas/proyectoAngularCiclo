@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Usuario } from 'src/app/interfaces/usuario.interface';
+import { GamersListServiceService } from '../gamers-list-service.service';
 
 @Component({
   selector: 'app-create-game',
@@ -75,7 +76,7 @@ listaJugadores: Usuario[] = []
 
 
 
-  constructor() { }
+  constructor(private gls: GamersListServiceService) { }
 
   ngOnInit(): void {
   }
@@ -86,5 +87,10 @@ listaJugadores: Usuario[] = []
     } else {
       this.listaJugadores.push(usuario);
     }
+  }
+
+  crearLista(lista: Usuario[]){
+    console.log(lista);
+    this.gls.listaComoLaQuierasLlamar = lista;
   }
 }

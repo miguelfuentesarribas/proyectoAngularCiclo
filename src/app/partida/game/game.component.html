@@ -1,0 +1,15 @@
+<mat-selection-list #gamers [multiple]="false">
+    <mat-list-option *ngFor="let gamer of gamerList" [value]="gamer">
+      <span>{{gamer.name}}</span>
+    </mat-list-option>
+</mat-selection-list>
+  
+<p>
+Option selected: {{gamers.selectedOptions.selected[0]?.value}}
+</p>
+
+<div *ngFor="let gamer of gamerList">
+  <p>a</p>
+  
+</div>
+

@@ -7,6 +7,7 @@ import { PartidaRoutingModule } from './partida-routing.module';
 import { TimerComponent } from './timer/timer.component';
 import { AccuracyComponent } from './timer/acuracyTimer.component';
 import { CountdownModule, CountdownGlobalConfig, CountdownConfig } from 'ngx-countdown';
+import { GameComponent } from './game/game.component';
 
 
 
@@ -14,7 +15,8 @@ import { CountdownModule, CountdownGlobalConfig, CountdownConfig } from 'ngx-cou
   declarations: [
     CreateGameComponent,
     TimerComponent,
-    AccuracyComponent
+    AccuracyComponent,
+    GameComponent
   ],
   imports: [
     CommonModule,
