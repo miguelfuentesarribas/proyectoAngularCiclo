@@ -1,12 +1,18 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Usuario } from 'src/app/interfaces/usuario.interface';
 import { GamersListServiceService } from '../gamers-list-service.service';
+import { AuthService } from '../../auth/services/auth.service';
 
 @Component({
   selector: 'app-create-game',
   templateUrl: './create-game.component.html',
 })
 export class CreateGameComponent implements OnInit {
+
+  get usuario() {
+    return this.as.usuario
+  }
+
 
   // cambiar objet por interfaz e implementar servicio
   listaUsuarios: Usuario[] = [
@@ -76,7 +82,8 @@ listaJugadores: Usuario[] = []
 
 
 
-  constructor(private gls: GamersListServiceService) { }
+  constructor(private gls: GamersListServiceService,
+              private as: AuthService) { }
 
   ngOnInit(): void {
   }

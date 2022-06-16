@@ -21,7 +21,8 @@
             <a routerLink="./listado"
                 mat-list-item
                 (click)="sidenav.toggle()">
-                <mat-icon mat-list-icon>label</mat-icon>
+                <mat-icon mat-list-icon>settings_applications</mat-icon>
+                
                 <span>Configuracion</span>
             </a>
         </mat-nav-list>
@@ -39,7 +40,8 @@
         <app-login *ngIf="!isAutenticaded()"></app-login>
         <button mat-button *ngIf="!isAutenticaded()" routerLink="/auth/singIn">Sing in</button>
 
-        <button mat-button *ngIf="isAutenticaded()">Logout</button>
+        <pre *ngIf="isAutenticaded()"> {{usuario | json}}</pre>
+        <button mat-button *ngIf="isAutenticaded()" (click)="logout()">Logout</button>
     </mat-toolbar>
       
 

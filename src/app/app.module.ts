@@ -7,7 +7,7 @@ import { BaseComponent } from './shared/base/base.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { AuthModule } from './auth/auth.module';
-import { AuthRoutingModule } from './auth/auth-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { PartidaModule } from './partida/partida.module';
 
 @NgModule({
@@ -21,7 +21,8 @@ import { PartidaModule } from './partida/partida.module';
     BrowserAnimationsModule,
     MaterialModule,
     AuthModule,
-    PartidaModule
+    PartidaModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
